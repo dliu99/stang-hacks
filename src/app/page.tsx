@@ -11,7 +11,7 @@ export default function StangHacksLanding() {
       <nav className="fixed top-0 w-full bg-white z-50">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-gray-900">Stang Hacks</div>
+            <div className="text-2xl font-bold text-gray-900 font-sans">Stang Hacks</div>
             <div className="hidden md:flex space-x-12">
               <a href="#schedule" className="text-lg text-gray-600 hover:text-gray-900 transition-colors">
                 Schedule

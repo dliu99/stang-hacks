@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { DM_Sans, Geist_Mono } from "next/font/google";
+import { DM_Sans, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const dmSans = Montserrat({
   variable: "--font-dm-sans",
   subsets: ["latin"],
 });
-
+/*
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+*/
 
 export const metadata: Metadata = {
   title: "StangHacks",
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} ${geistMono.variable} antialiased`}
+        className={`${dmSans.variable} antialiased`}
       >
         {children}
       </body>
