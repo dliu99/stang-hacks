@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import { DM_Sans, Geist_Mono, Montserrat } from "next/font/google";
+import { DM_Sans, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const dmSans = Montserrat({
+const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
 });
-/*
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-*/
 
 export const metadata: Metadata = {
-  title: "StangHacks",
-  description: "Stang Hacks is the Tri-Valley's premier hackathon",
+  title: "Stang Hacks",
+  description: "Monte Vista High School's first hackathon",
 };
 
 export default function RootLayout({
@@ -26,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} antialiased`}
+        className={`${dmSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
