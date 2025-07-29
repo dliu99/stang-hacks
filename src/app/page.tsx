@@ -1,19 +1,20 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Calendar, Clock, MapPin, Trophy, ExternalLink } from "lucide-react"
+import { MapPin, ExternalLink } from "lucide-react"
 import Link from "next/link"
 import Image from 'next/image'
 import { FaDiscord, FaLinkedin } from "react-icons/fa";
+import { ScrollToTopButton } from "@/components/scroll-to-top-button";
 
 export default function StangHacksLanding() {
   return (
     <div className="min-h-screen  font-sans dark">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-sm ">
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-4 py-1">
           <div className="flex items-center justify-between">
-            <div className="text-2xl  text-foreground">Stang Hacks</div>
+            <ScrollToTopButton />
             <div className="hidden md:flex space-x-12">
               <a href="#schedule" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
                 Schedule
@@ -46,14 +47,14 @@ export default function StangHacksLanding() {
           priority
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/70 z-10 pointer-events-none" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-black/80 z-10 pointer-events-none" aria-hidden="true"></div>
         <div className="container mx-auto text-center relative z-20">
           <div className="max-w-5xl mx-auto">
             {/* Logo Space */}
             <div className="mb-4">
-              <div className="w-full h-40 mx-auto  rounded-lg flex flex-row items-center justify-center gap-4">
-                <Image src="/translaptop.webp" alt="Stang Hacks Logo" width={160} height={160} className="mr-5"/>
-                <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-foreground tracking-tighter">Stang Hacks</h1>
+              <div className="w-full h-auto mx-auto  rounded-lg flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                <Image src="/translaptop.webp" alt="Stang Hacks Logo" width={160} height={160} className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 sm:mr-5"/>
+                <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-foreground tracking-tighter text-center sm:text-left">Stang Hacks</h1>
               </div>
               
               {/*<p className="text-2xl md:text-3xl lg:text-4xl text-gray-600 mb-12">Build the future in 48 hours</p>*/}
@@ -86,18 +87,19 @@ export default function StangHacksLanding() {
 
         {/* Social Links - Bottom Left */}
         <div className="absolute bottom-8 right-8 flex space-x-4 z-20">
-          <Link
-            href="https://discord.gg/3qHzFUuW6b"
-            className="w-14 h-14  text-white rounded-full flex items-center justify-center hover:bg-muted transition-colors"
-            target="_blank"
-          >
-            <FaDiscord className="w-10 h-10 text-indigo-600 hover:text-indigo-650 transition-colors" />
-          </Link>
+          
           <Link
             href="#"
-            className="w-14 h-14  text-white rounded-full flex items-center justify-center hover:bg-muted transition-colors"
+            className="w-12 h-12 md:w-14 md:h-14 text-white rounded-full flex items-center justify-center hover:bg-muted transition-colors"
           >
-            <FaLinkedin className="w-10 h-10 text-blue-600 hover:text-blue-650 transition-colors" />
+            <FaLinkedin className="w-8 h-8 md:w-10 md:h-10 text-blue-600 hover:text-blue-650 transition-colors" />
+          </Link>
+          <Link
+            href="https://discord.gg/3qHzFUuW6b"
+            className="w-12 h-12 md:w-14 md:h-14 text-white rounded-full flex items-center justify-center hover:bg-muted transition-colors"
+            target="_blank"
+          >
+            <FaDiscord className="w-8 h-8 md:w-10 md:h-10 text-indigo-600 hover:text-indigo-650 transition-colors" />
           </Link>
         </div>
       </section>
