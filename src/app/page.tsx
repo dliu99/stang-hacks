@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from 'next/image'
 import { FaDiscord, FaLinkedin } from "react-icons/fa";
 import { ScrollToTopButton } from "@/components/scroll-to-top-button";
+import { TeamMemberCard } from "@/components/team-member-card";
 
 export default function StangHacksLanding() {
   return (
@@ -69,7 +70,7 @@ export default function StangHacksLanding() {
                 <p className="text-lg text-muted-foreground">Workday Center, Monte Vista High School</p>
               </div>
               <Button size="lg" className="text-xl px-12 py-6 mt-12 h-16 w-50" asChild>
-                <Link href="https://forms.gle/1234567890" target="_blank">
+                <Link href="https://forms.gle/JSkMFreEYyFZ4Tg4A" target="_blank">
                   <ExternalLink className="mr-3 h-20 w-20" />Sign Up
                 </Link>
                 
@@ -110,8 +111,8 @@ export default function StangHacksLanding() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Schedule</h2>
           <div className="max-w-2xl mx-auto">
             <Card>
-              <CardHeader>
-                <CardTitle>/event-schedule.md</CardTitle>
+              <CardHeader >
+                <CardTitle >/event-schedule.md</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex justify-between">
@@ -203,7 +204,7 @@ export default function StangHacksLanding() {
                   <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4"></div>
                   <h3 className="font-semibold text-lg text-foreground">Your Name Here</h3>
                   <p className="text-muted-foreground text-sm mb-4">Software Engineer at Acme Inc.</p>
-                  <p className="text-muted-foreground text-sm">Interested in judging? Contact us at <span className="underline-offset-3 underline">stanghacks@gmail.com</span></p>
+                  <p className="text-muted-foreground text-sm">Interested in judging? Contact us at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
                 </CardContent>
               </Card>
               ))}
@@ -225,8 +226,7 @@ export default function StangHacksLanding() {
       <section id="sponsors" className="py-24 px-4 bg-background">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Sponsors & Prizes</h2>
-
-          {/* 
+                        {/* 
           <div className="mb-16">
             <h3 className="text-2xl font-semibold text-center mb-8">Prizes</h3>
             <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -257,35 +257,39 @@ export default function StangHacksLanding() {
             </div>
           </div>Prizes */}
 
-          {/* Sponsors 
+       
           <div>
-            <h3 className="text-2xl font-semibold text-center mb-8">Sponsors</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="bg-gray-100 h-24 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-400">Your Logo</span>
+            {/*<h3 className="text-2xl font-semibold text-center mb-8">Sponsors</h3>*/}
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-xs mx-auto">
+              {[1].map((i) => (
+                <div key={i} className="bg-muted h-65 rounded-lg flex items-center justify-center flex-col">
+                  <p className="text-foreground mb-2">Your Logo Here</p>
+                  <div className="text-muted-foreground text-sm flex justify-center items-center text-center max-w-2xs">
+                    <p>Help us make this event possible! Check out our <Link target="_blank" href="https://drive.google.com/file/d/16v6rj2K391AgSjCoPI6MJk3YIcDykynS/view?usp=sharing" className="underline-offset-3 underline">prospectus</Link> for more information.</p>
+                  </div>
                 </div>
               ))}
             </div>
-          </div>*/}
+          </div>
 
         </div>
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-24 px-4 bg-secondary">
+      <section id="team" className="py-12 md:py-24 px-2 md:px-4 bg-secondary">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Organizing Team</h2>
-          <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            {[1, 2, 3, 4].map((i) => (
-              <Card key={i} className="text-center">
-                <CardContent className="pt-6">
-                  <div className="w-20 h-20 bg-muted rounded-full mx-auto mb-4"></div>
-                  <h3 className="font-semibold mb-1">Team Member</h3>
-                  <p className="text-muted-foreground text-sm mb-2">Role</p>
-                  <p className="text-muted-foreground text-xs">Computer Science</p>
-                </CardContent>
-              </Card>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-8 md:mb-12 text-foreground">Team</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-8 max-w-5xl mx-auto">
+            {[
+              { name: "Devin Liu", role: "Lead Director", linkedinUrl: "https://www.linkedin.com/in/devin-liu-6aa1b9325/", imageSrc: "/team/dliu.avif" },
+              { name: "Thomas Liu", role: "Outreach Director", linkedinUrl: "https://www.linkedin.com/in/thomas-liu-380042231/", imageSrc: "/team/tliu.avif" },
+              { name: "Ayush Rane", role: "Sponsorship Director", linkedinUrl: "https://www.linkedin.com/in/ayush-rane-344b02260/", imageSrc: "/team/ayush.avif" },
+              { name: "Edison Law", role: "Tech Director", linkedinUrl: "https://www.linkedin.com/in/edison-law-04a3ab290/", imageSrc: "/team/edi.avif" },
+              { name: "Christian Egli", role: "Operations Director", linkedinUrl: "https://www.linkedin.com/in/christian-egli-4a7187344", imageSrc: "/team/egli.avif" },
+            ].map((member, i) => (
+              <div className="flex flex-col h-full min-h-56 md:min-h-72">
+                <TeamMemberCard key={i} {...member}/>
+              </div>
             ))}
           </div>
         </div>
@@ -294,7 +298,7 @@ export default function StangHacksLanding() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t bg-secondary">
         <div className="container mx-auto text-center">
-          <p className="text-muted-foreground mb-4">© 2024 Stang Hacks - Questions? Contact us on the discord or at <span className="underline-offset-3 underline">stanghacks@gmail.com</span></p>
+          <p className="text-muted-foreground mb-4">© 2024 Stang Hacks - Questions? Contact us on the <Link href="https://discord.gg/3qHzFUuW6b" className="underline-offset-3 underline">discord</Link> or at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
 
         </div>
       </footer>
