@@ -67,7 +67,7 @@ export default function StangHacksLanding() {
               <p className="text-lg text-muted-foreground">8:00 AM - 8:00 PM</p>
               <div className="flex flex-row items-center justify-center gap-2">
                 <MapPin className="h-6 w-6 text-muted-foreground" />
-                <p className="text-lg text-muted-foreground">Workday Center, Monte Vista High School</p>
+                <p className="text-lg text-muted-foreground">Workday Center, <Link href="https://maps.app.goo.gl/uCXp5xZibcQFfDYz8" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Monte Vista High School</Link></p>
               </div>
               <Button size="lg" className="text-xl px-12 py-6 mt-12 h-16 w-50" asChild>
                 <Link href="https://forms.gle/JSkMFreEYyFZ4Tg4A" target="_blank">
@@ -298,7 +298,7 @@ export default function StangHacksLanding() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t bg-secondary">
         <div className="container mx-auto text-center">
-          <p className="text-muted-foreground mb-4">© 2024 Stang Hacks - Questions? Contact us on the <Link href="https://discord.gg/3qHzFUuW6b" className="underline-offset-3 underline">discord</Link> or at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
+          <p className="text-muted-foreground mb-4">© 2024 Stang Hacks - Questions? Contact us on the <Link href="https://discord.gg/3qHzFUuW6b" className="underline-offset-3 underline hover:text-foreground transition-colors">discord</Link> or at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
 
         </div>
       </footer>
