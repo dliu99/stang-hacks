@@ -246,6 +246,14 @@ export default function StangHacksLanding() {
                   </Link>
                 </div>
               </div>
+              <div>
+                <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Gold</h4>
+                <div className="flex flex-row gap-8 justify-center items-center mb-4">
+                  <Link href="https://vapi.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/vapi.png" alt="Vapi" width={160} height={160} />
+                  </Link>
+                </div>
+              </div>
               {/* Special Section */}
               <div>
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Special</h4>
