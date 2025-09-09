@@ -241,6 +241,9 @@ export default function StangHacksLanding() {
                   <Link href="https://vercel.com" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/vercel.svg" alt="Vercel" width={160} height={160} />
                   </Link>
+                  <Link href="https://hackclub.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/hcb.png" alt="Hack Club Bank" width={60} height={60} />
+                  </Link>
                 </div>
               </div>
               {/* Special Section */}
