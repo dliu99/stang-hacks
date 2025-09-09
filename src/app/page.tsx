@@ -10,7 +10,7 @@ import { TeamMemberCard } from "@/components/team-member-card";
 
 export default function StangHacksLanding() {
   return (
-    <div className="min-h-screen  font-sans dark">
+    <div className="min-h-screen font-sans dark w-full">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 backdrop-blur-sm ">
         <div className="container mx-auto px-4 py-1">
@@ -63,8 +63,8 @@ export default function StangHacksLanding() {
 
             {/* Signup CTA */}
             <div className="mb-12">
-              <p className="text-lg text-muted-foreground">Saturday, January 24th 2026</p>
-              <p className="text-lg text-muted-foreground">8:00 AM - 8:00 PM</p>
+              <p className="text-lg text-muted-foreground">The #1 hackathon in the Tri-Valley!</p>
+              <p className="text-lg text-muted-foreground">Saturday, January 24th 2026 • 8:00 AM - 8:00 PM</p>
               <div className="flex flex-row items-center justify-center gap-2">
                 <MapPin className="h-6 w-6 text-muted-foreground" />
                 <p className="text-lg text-muted-foreground">Workday Center, <Link href="https://maps.app.goo.gl/uCXp5xZibcQFfDYz8" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Monte Vista High School</Link></p>
@@ -167,7 +167,7 @@ export default function StangHacksLanding() {
                 <AccordionTrigger className="text-foreground">What is this?</AccordionTrigger>
                 <AccordionContent className="text-muted-foreground">
                   This hackathon is a 12-hour event where students come together to build innovative projects, learn new
-                  technologies, and compete for prizes. No prior experience required!
+                  technologies, and compete for prizes. Just come and create a web app, mobile app, or anything else you can think of -- no prior experience required!
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
@@ -193,37 +193,10 @@ export default function StangHacksLanding() {
         </div>
       </section>
 
-      {/* Judges Section */}
-      <section id="judges" className="py-24 px-4 bg-secondary">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Judges</h2>
-          <div className="grid md:grid-cols-1 gap-8 max-w-sm mx-auto items-center justify-center">
-            {[1].map((i) => (
-              <Card key={i} className="text-center">
-                <CardContent className="pt-6">
-                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4"></div>
-                  <h3 className="font-semibold text-lg text-foreground">Your Name Here</h3>
-                  <p className="text-muted-foreground text-sm mb-4">Software Engineer at Acme Inc.</p>
-                  <p className="text-muted-foreground text-sm">Interested in judging? Contact us at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
-                </CardContent>
-              </Card>
-              ))}
-            {/*[1, 2, 3].map((i) => (
-              <Card key={i} className="text-center">
-                <CardContent className="pt-6">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                  <h3 className="font-semibold text-lg mb-1">Judge Name</h3>
-                  <p className="text-gray-600 text-sm mb-2">Senior Engineer at Tech Co</p>
-                  <p className="text-gray-500 text-sm">Expert in AI/ML and full-stack development</p>
-                </CardContent>
-              </Card>
-              ))*/}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Sponsors/Prizes Section */}
-      <section id="sponsors" className="py-24 px-4 bg-background">
+      <section id="sponsors" className="py-24 px-4 bg-muted">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Sponsors & Prizes</h2>
                         {/* 
@@ -260,18 +233,78 @@ export default function StangHacksLanding() {
        
           <div>
             {/*<h3 className="text-2xl font-semibold text-center mb-8">Sponsors</h3>*/}
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-xs mx-auto">
-              {[1].map((i) => (
-                <div key={i} className="bg-muted h-65 rounded-lg flex items-center justify-center flex-col">
-                  <p className="text-foreground mb-2">Your Logo Here</p>
-                  <div className="text-muted-foreground text-sm flex justify-center items-center text-center max-w-2xs">
-                    <p>Help us make this event possible! Check out our <Link target="_blank" href="https://drive.google.com/file/d/16v6rj2K391AgSjCoPI6MJk3YIcDykynS/view?usp=sharing" className="underline-offset-3 underline">prospectus</Link> for more information.</p>
-                  </div>
+            <div className="flex flex-col gap-8 max-w-3xl mx-auto justify-center">
+              {/* Partner Section */}
+              <div>
+                <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Partner</h4>
+                <div className="flex flex-row gap-8 justify-center items-center mb-4">
+                  <Link href="https://vercel.com" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/vercel.svg" alt="Vercel" width={160} height={160} />
+                  </Link>
                 </div>
-              ))}
+              </div>
+              {/* Special Section */}
+              <div>
+                <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Special</h4>
+                <div className="flex flex-row gap-8 justify-center items-center mb-8">
+                <Link href="https://notion.so" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/notion.png" alt="Notion" width={160} height={160} />
+                  </Link>
+                  <Link href="https://artofproblemsolving.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/aops.svg" alt="AoPS" width={160} height={160} />
+                  </Link>
+                  <Link href="https://kahoot.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/kahoot.svg" alt="Kahoot!" width={160} height={160} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="text-muted-foreground text-sm flex justify-center items-center text-center max-w-xs">
+                <p>
+                  Help us make this event possible! Check out our{" "}
+                  <Link
+                    target="_blank"
+                    href="https://drive.google.com/file/d/16v6rj2K391AgSjCoPI6MJk3YIcDykynS/view?usp=sharing"
+                    className="underline-offset-3 underline"
+                  >
+                    prospectus
+                  </Link>{" "}
+                  for more information or email us at <span className="underline-offset-3 underline">team@stanghacks.com</span>.
+                </p>
+              </div>
             </div>
           </div>
 
+        </div>
+      </section>
+      
+{/* Judges Section */}
+<section id="judges" className="py-24 px-4 bg-background">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Judges</h2>
+          <div className="grid md:grid-cols-1 gap-8 max-w-sm mx-auto items-center justify-center">
+            {[1].map((i) => (
+              <Card key={i} className="text-center">
+                <CardContent className="pt-6">
+                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4"></div>
+                  <h3 className="font-semibold text-lg text-foreground">Your Name Here</h3>
+                  <p className="text-muted-foreground text-sm mb-4">Software Engineer at Acme Inc.</p>
+                  <p className="text-muted-foreground text-sm">Interested in judging? Contact us at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
+                </CardContent>
+              </Card>
+              ))}
+            {/*[1, 2, 3].map((i) => (
+              <Card key={i} className="text-center">
+                <CardContent className="pt-6">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
+                  <h3 className="font-semibold text-lg mb-1">Judge Name</h3>
+                  <p className="text-gray-600 text-sm mb-2">Senior Engineer at Tech Co</p>
+                  <p className="text-gray-500 text-sm">Expert in AI/ML and full-stack development</p>
+                </CardContent>
+              </Card>
+              ))*/}
+          </div>
         </div>
       </section>
 
@@ -298,7 +331,7 @@ export default function StangHacksLanding() {
       {/* Footer */}
       <footer className="py-8 px-4 border-t bg-secondary">
         <div className="container mx-auto text-center">
-          <p className="text-muted-foreground mb-4">© 2024 Stang Hacks - Questions? Contact us on the <Link href="https://discord.gg/3qHzFUuW6b" className="underline-offset-3 underline hover:text-foreground transition-colors">discord</Link> or at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
+          <p className="text-muted-foreground mb-4">© 2026 Stang Hacks - Questions? Contact us on the <Link href="https://discord.gg/3qHzFUuW6b" className="underline-offset-3 underline hover:text-foreground transition-colors">discord</Link> or at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
 
         </div>
       </footer>
