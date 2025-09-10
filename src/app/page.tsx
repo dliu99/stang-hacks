@@ -323,16 +323,28 @@ export default function StangHacksLanding() {
       <section id="team" className="py-12 md:py-24 px-2 md:px-4 bg-secondary">
         <div className="container mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-8 md:mb-12 text-foreground">Team</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 md:gap-8 max-w-5xl mx-auto">
+          <h1 className="text-lg sm:text-xl md:text-lg lg:text-3xl font-bold text-center mb-4 text-foreground">Directors</h1>
+          {/* Lead Director - Devin Liu */}
+          <div className="flex justify-center mb-8">
+            <div className="flex flex-col">
+              <TeamMemberCard
+                name="Devin Liu"
+                role="Lead Director"
+                linkedinUrl="https://www.linkedin.com/in/devin-liu-6aa1b9325/"
+              />
+            </div>
+          </div>
+
+          {/* Other Directors */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto">
             {[
-              { name: "Devin Liu", role: "Lead Director", linkedinUrl: "https://www.linkedin.com/in/devin-liu-6aa1b9325/", imageSrc: "/team/dliu.avif" },
-              { name: "Thomas Liu", role: "Director of Outreach", linkedinUrl: "https://www.linkedin.com/in/thomas-liu-380042231/", imageSrc: "/team/tliu.avif" },
-              { name: "Ayush Rane", role: "Director of Sponsorships", linkedinUrl: "https://www.linkedin.com/in/ayush-rane-344b02260/", imageSrc: "/team/ayush.avif" },
-              { name: "Edison Law", role: "Director of Technology", linkedinUrl: "https://www.linkedin.com/in/edison-law-04a3ab290/", imageSrc: "/team/edi.avif" },
-              { name: "Christian Egli", role: "Director of Operations", linkedinUrl: "https://www.linkedin.com/in/christian-egli-4a7187344", imageSrc: "/team/egli.avif" },
+              { name: "Thomas Liu", role: "Director of Outreach", linkedinUrl: "https://www.linkedin.com/in/thomas-liu-380042231/" },
+              { name: "Ayush Rane", role: "Director of Sponsorships", linkedinUrl: "https://www.linkedin.com/in/ayush-rane-344b02260/" },
+              { name: "Edison Law", role: "Director of Technology", linkedinUrl: "https://www.linkedin.com/in/edison-law-04a3ab290/" },
+              { name: "Christian Egli", role: "Director of Operations", linkedinUrl: "https://www.linkedin.com/in/christian-egli-4a7187344" },
             ].map((member, i) => (
-              <div className="flex flex-col h-full min-h-56 md:min-h-72">
-                <TeamMemberCard key={i} {...member}/>
+              <div key={i} className="flex flex-col">
+                <TeamMemberCard {...member}/>
               </div>
             ))}
           </div>
