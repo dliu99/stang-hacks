@@ -105,6 +105,118 @@ export default function StangHacksLanding() {
         </div>
       </section>
 
+      {/* Landing Info Section */}
+      <section className="py-24 px-4 bg-background">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-foreground">
+              Build. Learn. Create.
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
+              Join the Tri-Valley's biggest, greatest, and bestest hackathon yet! Whether you're a seasoned developer
+              or just starting your coding journey, Stang Hacks is the place to be to bring your ideas to life.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8 mt-16">
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">The Cutting Edge</h3>
+                <p className="text-muted-foreground">
+                  Build with the latest and greatest tools in tech and AI. At Stang Hacks, you'll have access to tools like{" "}
+                  <Link
+                    href="https://v0.dev/"
+                    className="text-foreground hover:text-primary transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    v0
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    href="https://vapi.ai/"
+                    className="text-foreground hover:text-primary transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Vapi
+                  </Link>{" "}
+                  to build anything you can imagine.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Connect</h3>
+                <p className="text-muted-foreground">
+                  Network with fellow developers, make new friends, and build lasting connections in tech.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Make Bread</h3>
+                <p className="text-muted-foreground">
+                  Compete for over $1000 in cash prizes. Even if you don't win, you'll walk home with free swag, snacks, and a great experience!
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-16 p-8 bg-muted/50 rounded-lg border">
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">What You'll Get</h3>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Free meals and snacks throughout the event
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Professional mentorship and guidance
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Access to industry experts and judges
+                  </li>
+                </ul>
+                <ul className="space-y-3 text-muted-foreground">
+                  
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Portfolio-worthy projects to showcase
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Tech bro swag
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Schedule Section */}
       <section id="schedule" className="py-24 px-4 bg-secondary">
         <div className="container mx-auto">
@@ -112,7 +224,7 @@ export default function StangHacksLanding() {
           <div className="max-w-2xl mx-auto">
             <Card>
               <CardHeader >
-                <CardTitle >/event-schedule.md</CardTitle>
+                <CardTitle >./schedule.md</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex justify-between">
