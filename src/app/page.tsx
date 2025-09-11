@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { MapPin, ExternalLink } from "lucide-react"
+import { VercelWordmark } from 'geist/logos';
 import Link from "next/link"
 import Image from 'next/image'
 import { FaDiscord, FaLinkedin } from "react-icons/fa";
@@ -362,19 +363,28 @@ export default function StangHacksLanding() {
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Gold</h4>
                 <div className="flex flex-row gap-8 justify-center items-center mb-4">
                   <Link href="https://vapi.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
-                    <Image src="/sponsors/vapi.png" alt="Vapi" width={160} height={160} />
+                    <Image src="/sponsors/vapi.png" alt="Vapi" width={160} height={100} />
                   </Link>
                 </div>
               </div>
+              {/*<div>
+                <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Silver</h4>
+                <div className="flex flex-row gap-8 justify-center items-center mb-4">
+                  <Link href="https://cerebras.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/cerebras.png" alt="Cerebras" width={160} height={160} />
+                  </Link>
+                </div>
+              </div>*/}
               {/* Special Section */}
               <div>
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Special</h4>
                 <div className="flex flex-row gap-8 justify-center items-center mb-8">
-                <Link href="https://notion.so" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
-                    <Image src="/sponsors/notion.png" alt="Notion" width={160} height={160} />
-                  </Link>
+                
                   <Link href="https://artofproblemsolving.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/aops.svg" alt="AoPS" width={160} height={160} />
+                  </Link>
+                  <Link href="https://notion.so" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/notion.png" alt="Notion" width={60} height={60} />
                   </Link>
                   <Link href="https://kahoot.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/kahoot.svg" alt="Kahoot!" width={160} height={160} />
