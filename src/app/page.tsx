@@ -389,7 +389,9 @@ export default function StangHacksLanding() {
                   <Link href="https://kahoot.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/kahoot.svg" alt="Kahoot!" width={160} height={160} />
                   </Link>
+                  
                 </div>
+                <h1 className="text-center text-muted-foreground text-sm mb-6">and more on the way -- stay posted!</h1>
               </div>
             </div>
             <div className="flex justify-center">
