@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { MapPin, ExternalLink } from "lucide-react"
-import { VercelWordmark } from 'geist/logos';
 import Link from "next/link"
 import Image from 'next/image'
 import { FaDiscord, FaLinkedin } from "react-icons/fa";
@@ -127,7 +126,7 @@ export default function StangHacksLanding() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">The Cutting Edge</h3>
                 <p className="text-muted-foreground">
-                  Build with the latest and greatest tools in tech and AI. At Stang Hacks, you'll have access to tools like{" "}
+                  At Stang Hacks, you'll get exclusive access to the coolest tools like{" "}
                   <Link
                     href="https://v0.dev/"
                     className="text-foreground hover:text-primary transition-colors"
@@ -157,14 +156,14 @@ export default function StangHacksLanding() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">Connect</h3>
                 <p className="text-muted-foreground">
-                  Network with fellow developers, make new friends, and build lasting connections in tech.
+                  Network with fellow developers, build lasting industry connections, and make new friends!
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                   <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">Make Bread</h3>
@@ -182,13 +181,13 @@ export default function StangHacksLanding() {
                     <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Free meals and snacks throughout the event
+                    Free pizza, drinks, and Panda Express
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Professional mentorship and guidance
+                    Guidance from experienced developers
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -204,6 +203,12 @@ export default function StangHacksLanding() {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Portfolio-worthy projects to showcase
+                  </li>
+                  <li className="flex items-start">
+                    <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Enough API credits to go to the moon
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
