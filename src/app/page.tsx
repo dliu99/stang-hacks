@@ -48,7 +48,7 @@ export default function StangHacksLanding() {
           priority
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/80 z-10 pointer-events-none" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" aria-hidden="true"></div>
         <div className="container mx-auto text-center relative z-20">
           <div className="max-w-5xl mx-auto">
             {/* Logo Space */}
@@ -69,9 +69,9 @@ export default function StangHacksLanding() {
                 <MapPin className="h-6 w-6 text-muted-foreground" />
                 <p className="text-lg text-muted-foreground">Workday Center, <Link href="https://maps.app.goo.gl/uCXp5xZibcQFfDYz8" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Monte Vista High School</Link></p>
               </div>
-              <Button size="lg" className="text-xl px-12 py-6 mt-12 h-16 w-50" asChild>
+              <Button size="lg" className="text-xl rounded-3xl px-12 py-6 mt-12 h-16 w-50 hover:scale-105 transition-all hover:border-2" asChild>
                 <Link href="https://forms.gle/JSkMFreEYyFZ4Tg4A" target="_blank">
-                  <ExternalLink className="mr-3 h-20 w-20" />Sign Up
+                  <ExternalLink className="mr-3 h-20 w-20" />Join Now
                 </Link>
                 
               </Button>
@@ -110,10 +110,10 @@ export default function StangHacksLanding() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-foreground">
-              Build. Learn. Create.
+            The Tri-Valley's biggest, greatest, and bestest
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed">
-              Join the Tri-Valley's biggest, greatest, and bestest hackathon yet! Whether you're a seasoned developer
+              Whether you're a seasoned developer
               or just starting your coding journey, Stang Hacks is the place to be to bring your ideas to life.
             </p>
 
@@ -126,7 +126,7 @@ export default function StangHacksLanding() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">The Cutting Edge</h3>
                 <p className="text-muted-foreground">
-                  At Stang Hacks, you'll get exclusive access to the coolest tools like{" "}
+                  At Stang Hacks, you'll have exclusive access to the coolest tools in tech and AI like{" "}
                   <Link
                     href="https://v0.dev/"
                     className="text-foreground hover:text-primary transition-colors"
@@ -168,7 +168,7 @@ export default function StangHacksLanding() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">Make Bread</h3>
                 <p className="text-muted-foreground">
-                  Compete for over $1000 in cash prizes. Even if you don't win, you'll walk home with free swag, snacks, and a great experience!
+                  Compete for over <span className="text-foreground hover:text-primary transition-colors">$1000</span> in cash prizes. Even if you don't win, you'll walk home with free swag, snacks, and a great experience!
                 </p>
               </div>
             </div>
