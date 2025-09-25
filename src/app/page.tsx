@@ -12,11 +12,14 @@ export default function StangHacksLanding() {
   return (
     <div className="min-h-screen font-sans dark w-full">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 backdrop-blur-sm hidden md:block">
+      <nav className="fixed top-0 w-full z-50 backdrop-blur-sm hidden md:flex md:backdrop-blur-sm">
         <div className="container mx-auto px-4 py-1">
           <div className="flex items-center justify-between">
             <ScrollToTopButton />
             <div className="hidden md:flex space-x-12">
+              <a href="#sponsors" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
+                Sponsors
+              </a>
               <a href="#judges" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
                 Judges
               </a>
@@ -25,9 +28,6 @@ export default function StangHacksLanding() {
               </a>
               <a href="#faq" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
                 FAQ
-              </a>
-              <a href="#sponsors" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
-                Sponsors
               </a>
               <a href="#team" className="text-lg text-muted-foreground hover:text-foreground transition-colors">
                 Team
@@ -85,21 +85,20 @@ export default function StangHacksLanding() {
           </div>
         </div>
 
-        {/* Social Links - Bottom Left */}
-        <div className="absolute bottom-8 right-8 flex space-x-4 z-20">
-          
+        {/* Social Links */}
+        <div className="flex justify-center space-x-4 z-20 absolute bottom-4 right-4 md:absolute md:bottom-8 md:right-8">
           <Link
             href="#"
-            className="w-12 h-12 md:w-14 md:h-14 text-white rounded-full flex items-center justify-center hover:bg-muted transition-colors"
+            className="w-12 h-12 md:w-14 md:h-14 text-white rounded-md flex items-center justify-center hover:border-1 hover:border-white transition-colors"
           >
-            <FaLinkedin className="w-8 h-8 md:w-10 md:h-10 text-blue-600 hover:text-blue-650 transition-colors" />
+            <FaLinkedin className="w-8 h-8 md:w-10 md:h-10  hover:text-blue-650 transition-colors" />
           </Link>
           <Link
             href="https://discord.gg/dSmvmQnEpw"
-            className="w-12 h-12 md:w-14 md:h-14 text-white rounded-full flex items-center justify-center hover:bg-muted transition-colors"
+            className="w-12 h-12 md:w-14 md:h-14 text-white rounded-md flex items-center justify-center hover:border-1 hover:border-white transition-colors"
             target="_blank"
           >
-            <FaDiscord className="w-8 h-8 md:w-10 md:h-10 text-indigo-600 hover:text-indigo-650 transition-colors" />
+            <FaDiscord className="w-8 h-8 md:w-10 md:h-10 hover:text-indigo-650 transition-colors" />
           </Link>
         </div>
       </section>
@@ -113,7 +112,7 @@ export default function StangHacksLanding() {
             </h2>
             <p className="text-lg md:text-xl text-foreground  leading-relaxed">
               Whether you're a seasoned developer
-              or just starting your coding journey, Stang Hacks is the place to be to bring your ideas to life.
+              or just starting your coding journey, come solve problems and bring ideas to life at Stang Hacks.
             </p>
           </div>
         </div>
