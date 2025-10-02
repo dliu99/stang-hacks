@@ -70,7 +70,7 @@ export default function StangHacksLanding() {
               </div>
               <Button size="lg" className="rounded-lg px-12 py-6 mt-12 h-14 w-50 hover:scale-105 transition-all hover:border-1 border-white text-xl" asChild>
                 <Link href="https://forms.gle/JSkMFreEYyFZ4Tg4A" target="_blank">
-                  <ExternalLink className="mr-3 h-20 w-20" />Join Us
+                  <ExternalLink className="mr-3 h-20 w-20" />Sign Up
                 </Link>
                 
               </Button>
