@@ -69,7 +69,7 @@ export default function StangHacksLanding() {
                 <p className="text-lg text-muted-foreground">Workday Center, <Link href="https://maps.app.goo.gl/uCXp5xZibcQFfDYz8" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Monte Vista High School</Link></p>
               </div>
               <Button size="lg" className="rounded-lg px-12 py-6 mt-12 h-14 w-50 hover:scale-105 transition-all hover:border-1 border-white text-xl" asChild>
-                <Link href="https://forms.gle/JSkMFreEYyFZ4Tg4A" target="_blank">
+                <Link href="https://luma.com/bi8uvliv" target="_blank">
                   <ExternalLink className="mr-3 h-20 w-20" />Sign Up
                 </Link>
                 
