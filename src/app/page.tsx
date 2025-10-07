@@ -11,8 +11,48 @@ import { TeamMemberCard } from "@/components/team-member-card";
 export default function StangHacksLanding() {
   return (
     <div className="min-h-screen font-sans dark w-full">
+      {/* Announcement Bar */}
+      <div className="fixed top-0 w-full z-[60] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 overflow-hidden">
+        <div className="relative flex">
+          <div className="animate-scroll flex whitespace-nowrap">
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+          </div>
+          <div className="animate-scroll flex whitespace-nowrap" aria-hidden="true">
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+            <span className="mx-8 text-sm md:text-base font-medium">
+              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 backdrop-blur-sm hidden md:flex md:backdrop-blur-sm">
+      <nav className="fixed top-10 w-full z-50 backdrop-blur-sm hidden md:flex md:backdrop-blur-sm">
         <div className="container mx-auto px-4 py-1">
           <div className="flex items-center justify-between">
             <ScrollToTopButton />
@@ -38,7 +78,7 @@ export default function StangHacksLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-4 relative overflow-hidden">
+      <section className="min-h-screen flex flex-col justify-center items-center px-4 relative overflow-hidden pt-10">
         {/* Background Image */}
         <Image
           src="/bg.webp"
@@ -63,13 +103,14 @@ export default function StangHacksLanding() {
 
             {/* Signup CTA */}
             <div className="mb-12">
+              
               <p className="text-lg text-muted-foreground">January 24th, 2026 • 8:00 AM - 8:00 PM</p>
               <div className="flex flex-row items-center justify-center gap-2">
                 <MapPin className="h-6 w-6 text-muted-foreground" />
                 <p className="text-lg text-muted-foreground">Workday Center, <Link href="https://maps.app.goo.gl/uCXp5xZibcQFfDYz8" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Monte Vista High School</Link></p>
               </div>
               <Button size="lg" className="rounded-lg px-12 py-6 mt-12 h-14 w-50 hover:scale-105 transition-all hover:border-1 border-white text-xl" asChild>
-                <Link href="https://forms.gle/JSkMFreEYyFZ4Tg4A" target="_blank">
+                <Link href="https://luma.com/bi8uvliv" target="_blank">
                   <ExternalLink className="mr-3 h-20 w-20" />Sign Up
                 </Link>
                 
@@ -252,6 +293,17 @@ export default function StangHacksLanding() {
                 <div className="flex flex-row gap-8 justify-center items-center mb-4">
                   <Link href="https://vapi.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/vapi.png" alt="Vapi" width={160} height={100} />
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Silver</h4>
+                <div className="flex flex-row gap-8 justify-center items-center mb-4">
+                  <Link href="https://omi.me" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/omi.png" alt="Omi" width={160} height={100} />
+                  </Link>
+                  <Link href="https://vly.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/vly.png" alt="Vly" width={70} height={70} />
                   </Link>
                 </div>
               </div>
@@ -480,7 +532,6 @@ export default function StangHacksLanding() {
         <div className="container mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-8 md:mb-12 text-foreground">Team</h2>
           <h1 className="text-lg sm:text-xl md:text-lg lg:text-3xl font-bold text-center mb-4 text-foreground">Directors</h1>
-          {/* Lead Director - Devin Liu */}
           <div className="flex justify-center mb-8">
             <div className="flex flex-col">
               <TeamMemberCard
@@ -491,13 +542,29 @@ export default function StangHacksLanding() {
             </div>
           </div>
 
-          {/* Other Directors */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto mb-20">
             {[
               { name: "Thomas Liu", role: "Director of Outreach", linkedinUrl: "https://www.linkedin.com/in/thomas-liu-380042231/" },
               { name: "Ayush Rane", role: "Director of Sponsorships", linkedinUrl: "https://www.linkedin.com/in/ayush-rane-344b02260/" },
               { name: "Edison Law", role: "Director of Technology", linkedinUrl: "https://www.linkedin.com/in/edison-law-04a3ab290/" },
               { name: "Christian Egli", role: "Director of Operations", linkedinUrl: "https://www.linkedin.com/in/christian-egli-4a7187344" },
+            ].map((member, i) => (
+              <div key={i} className="flex flex-col">
+                <TeamMemberCard {...member}/>
+              </div>
+            ))}
+          </div>
+          <h1 className="text-lg sm:text-xl md:text-lg lg:text-3xl font-bold text-center mb-8 text-foreground">Team</h1>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto">
+            {[
+              { name: "Braden Luu", role:"Sponsorships", linkedinUrl: "#" },
+              { name: "Shlok Madhekar", role: "Operations",linkedinUrl: "https://www.linkedin.com/in/shlok-madhekar-b281872a1" },
+              { name: "Dylan Chauhan", role: "Volunteers", linkedinUrl: "#" },
+              { name: "Risha Bhat", role: "Outreach", linkedinUrl: "https://www.linkedin.com/in/risha-bhat-250297341/" },
+              { name: "Ilina Iyer", role:"Outreach", linkedinUrl: "https://www.linkedin.com/in/ilinai/" },
+              { name: "Jacob Chiu", linkedinUrl: "#" },
+              { name: "Scott Wang", linkedinUrl: "#" },
+              { name: "Tejas Nagarkar", linkedinUrl: "https://www.linkedin.com/in/tejas-tj-nagarkar-740298309/" },
             ].map((member, i) => (
               <div key={i} className="flex flex-col">
                 <TeamMemberCard {...member}/>

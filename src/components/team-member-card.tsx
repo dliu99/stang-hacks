@@ -4,7 +4,7 @@ import React from "react";
 
 interface TeamMemberCardProps {
   name: string;
-  role: string;
+  role?: string;
   linkedinUrl: string;
   imageSrc?: string;
 }
@@ -21,6 +21,8 @@ export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, role, link
         {name}
       </Link>
     </h3>
-    <p className="text-muted-foreground text-sm mb-1">{role}</p>
+    {role && (
+      <p className="text-muted-foreground text-sm mb-1">{role}</p>
+    )}
   </div>
 ); 
