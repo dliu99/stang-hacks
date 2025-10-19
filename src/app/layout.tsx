@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Sans, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,10 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#b91c1c",
+};
+
 export const metadata: Metadata = {
   title: "Stang Hacks",
   description: "Monte Vista High School's first hackathon",
-  themeColor: "#b91c1c",
 };
 
 export default function RootLayout({
