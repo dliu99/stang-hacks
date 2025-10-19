@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Stang Hacks",
   description: "Monte Vista High School's first hackathon",
+  themeColor: "#b91c1c",
 };
 
 export default function RootLayout({
