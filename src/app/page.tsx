@@ -10,9 +10,9 @@ import { TeamMemberCard } from "@/components/team-member-card";
 
 export default function StangHacksLanding() {
   return (
-    <div className="min-h-screen font-sans dark w-full">
+    <div className="min-h-screen font-sans dark w-full bg-background">
       {/* Announcement Bar */}
-      <div className="fixed top-0 w-full z-[60] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-2 overflow-hidden">
+      <div className="fixed top-0 w-full z-[60] bg-gradient-to-r from-blue-600  to-purple-600 text-white py-2 overflow-hidden">
         <div className="relative flex">
           <div className="animate-scroll flex whitespace-nowrap">
             <span className="mx-8 text-sm md:text-base font-medium">
@@ -88,7 +88,7 @@ export default function StangHacksLanding() {
           priority
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/80 z-10 pointer-events-none" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" aria-hidden="true"></div>
         <div className="container mx-auto text-center relative z-20">
           <div className="max-w-5xl mx-auto">
             {/* Logo Space */}
@@ -294,14 +294,15 @@ export default function StangHacksLanding() {
                   <Link href="https://vapi.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/vapi.png" alt="Vapi" width={160} height={100} />
                   </Link>
+                  <Link href="https://omi.me" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/omi.png" alt="Omi" width={160} height={100} />
+                  </Link>
                 </div>
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Silver</h4>
                 <div className="flex flex-row gap-8 justify-center items-center mb-4">
-                  <Link href="https://omi.me" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
-                    <Image src="/sponsors/omi.png" alt="Omi" width={160} height={100} />
-                  </Link>
+                  
                   <Link href="https://vly.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/vly.png" alt="Vly" width={70} height={70} />
                   </Link>
@@ -359,27 +360,31 @@ export default function StangHacksLanding() {
       <section id="judges" className="py-24 px-4 bg-background">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Judges</h2>
-          <div className="grid md:grid-cols-1 gap-8 max-w-sm mx-auto items-center justify-center">
-            {[1].map((i) => (
-              <Card key={i} className="text-center">
-                <CardContent className="pt-6">
-                  <div className="w-24 h-24 bg-muted rounded-full mx-auto mb-4"></div>
-                  <h3 className="font-semibold text-lg text-foreground">Your Name Here</h3>
-                  <p className="text-muted-foreground text-sm mb-4">Software Engineer at Acme Inc.</p>
-                  <p className="text-muted-foreground text-sm">Interested in judging? Contact us at <span className="underline-offset-3 underline">team@stanghacks.com</span></p>
-                </CardContent>
-              </Card>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {[
+              { name: "Mahesh Chaudhari", role: "Assistant Professor - University of San Francisco", linkedinUrl: "https://www.linkedin.com/in/maheshchaudhari/" },
+              { name: "Tejas Pravinbhai Patel", role: "Software Development Engineer - Amazon", linkedinUrl: "https://www.linkedin.com/in/tejas5038" },
+              { name: "Jay Bharat Mehta", role: "Senior Software Engineer - Snowflake", linkedinUrl: "https://www.linkedin.com/in/jaymehta501" },
+              
+              
+            ].map((judge, i) => (
+              <div key={i} className="flex flex-col">
+                <TeamMemberCard {...judge}/>
+              </div>
+              
+            ))}
+
+
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
+          {[{ name: "Shantanoo Kirtane", role: "Principal Engineer - Walmart Tech", linkedinUrl: "https://www.linkedin.com/in/shantanoo-kirtane-47017215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+                { name: "Surya Rao Rayarao", role: "Lead Software Engineer - SS&C Technologies", linkedinUrl: "https://www.linkedin.com/in/suryarayarao/" },
+
+              ].map((judge, i) => (
+                <div key={i} className="flex flex-col">
+                  <TeamMemberCard {...judge}/>
+                </div>
               ))}
-            {/*[1, 2, 3].map((i) => (
-              <Card key={i} className="text-center">
-                <CardContent className="pt-6">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-                  <h3 className="font-semibold text-lg mb-1">Judge Name</h3>
-                  <p className="text-gray-600 text-sm mb-2">Senior Engineer at Tech Co</p>
-                  <p className="text-gray-500 text-sm">Expert in AI/ML and full-stack development</p>
-                </CardContent>
-              </Card>
-              ))*/}
           </div>
         </div>
       </section>
@@ -559,12 +564,12 @@ export default function StangHacksLanding() {
             {[
               { name: "Braden Luu", role:"Sponsorships", linkedinUrl: "#" },
               { name: "Shlok Madhekar", role: "Operations",linkedinUrl: "https://www.linkedin.com/in/shlok-madhekar-b281872a1" },
-              { name: "Dylan Chauhan", role: "Volunteers", linkedinUrl: "#" },
+              { name: "Dylan Chauhan", role: "Recruitment", linkedinUrl: "#" },
               { name: "Risha Bhat", role: "Outreach", linkedinUrl: "https://www.linkedin.com/in/risha-bhat-250297341/" },
               { name: "Ilina Iyer", role:"Outreach", linkedinUrl: "https://www.linkedin.com/in/ilinai/" },
-              { name: "Jacob Chiu", linkedinUrl: "#" },
-              { name: "Scott Wang", linkedinUrl: "#" },
-              { name: "Tejas Nagarkar", linkedinUrl: "https://www.linkedin.com/in/tejas-tj-nagarkar-740298309/" },
+              { name: "Jacob Chiu", role: "Volunteer", linkedinUrl: "#" },
+              { name: "Scott Wang", role: "Volunteer", linkedinUrl: "#" },
+              { name: "Tejas Nagarkar", role: "Food Quality Testing Intern", linkedinUrl: "https://www.linkedin.com/in/tejas-tj-nagarkar-740298309/" },
             ].map((member, i) => (
               <div key={i} className="flex flex-col">
                 <TeamMemberCard {...member}/>
