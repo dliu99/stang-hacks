@@ -200,6 +200,44 @@
 
 body {
   letter-spacing: var(--tracking-normal);
+    /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #ffffff #1a1a2e;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
 
 @layer base {
@@ -208,6 +246,7 @@ body {
   }
   body {
     @apply bg-background text-foreground flex flex-col items-center;
+    background-color: #1a1a2e;
   }
 }
 
