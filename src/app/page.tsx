@@ -16,38 +16,22 @@ export default function StangHacksLanding() {
         <div className="relative flex">
           <div className="animate-scroll flex whitespace-nowrap">
             <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
             </span>
             <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
             </span>
             <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
             </span>
             <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
             </span>
             <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
+              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
             </span>
           </div>
-          <div className="animate-scroll flex whitespace-nowrap" aria-hidden="true">
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Nov. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-          </div>
+          
         </div>
       </div>
 
