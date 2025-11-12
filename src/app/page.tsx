@@ -302,7 +302,9 @@ export default function StangHacksLanding() {
               <div>
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Silver</h4>
                 <div className="flex flex-row gap-8 justify-center items-center mb-4">
-                  
+                <Link href="https://www.pcbway.com" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/pcbway.webp" alt="PCBWay" width={160} height={70} />
+                  </Link>
                   <Link href="https://vly.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/vly.png" alt="Vly" width={70} height={70} />
                   </Link>
@@ -320,7 +322,9 @@ export default function StangHacksLanding() {
               <div>
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Special</h4>
                 <div className="flex flex-row gap-8 justify-center items-center mb-8">
-                
+                <Link href="https://nordvpn.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/nord.svg" alt="NordVPN" width={90} height={90} />
+                  </Link>
                   <Link href="https://artofproblemsolving.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/aops.svg" alt="AoPS" width={160} height={160} />
                   </Link>
