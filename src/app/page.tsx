@@ -550,8 +550,9 @@ export default function StangHacksLanding() {
           <h1 className="text-lg sm:text-xl md:text-lg lg:text-3xl font-bold text-center mb-8 text-foreground">Team</h1>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto">
             {[
-              { name: "Braden Luu", role:"Sponsorships", linkedinUrl: "#" },
               { name: "Shlok Madhekar", role: "Operations",linkedinUrl: "https://www.linkedin.com/in/shlok-madhekar-b281872a1" },
+              { name: "Braden Luu", role:"Sponsorships", linkedinUrl: "#" },
+              { name: "Anish Dhamija", role: "Sponsorships",linkedinUrl: "https://www.linkedin.com/in/anish-dhamija-5b93712b3" },
               { name: "Dylan Chauhan", role: "Recruitment", linkedinUrl: "#" },
               { name: "Risha Bhat", role: "Outreach", linkedinUrl: "https://www.linkedin.com/in/risha-bhat-250297341/" },
               { name: "Ilina Iyer", role:"Outreach", linkedinUrl: "https://www.linkedin.com/in/ilinai/" },
