@@ -213,7 +213,7 @@ export default function StangHacksLanding() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground">Make Bread</h3>
                 <p className="text-muted-foreground">
-                  Compete for over <span className="text-foreground hover:text-primary transition-colors">$1000</span> in cash prizes. Even if you don't win, you'll walk home with free swag, snacks, and a great experience!
+                  Compete with 200+ hackers for <span className="text-foreground hover:text-primary transition-colors">$1000+</span> in cold hard cash. Even if you don't win, you'll walk home with free swag, snacks, and a great experience!
                 </p>
               </div>
             </div>
