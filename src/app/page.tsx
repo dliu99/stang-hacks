@@ -11,30 +11,6 @@ import { TeamMemberCard } from "@/components/team-member-card";
 export default function StangHacksLanding() {
   return (
     <div className="min-h-screen font-sans dark w-full bg-background">
-      {/* Announcement Bar */}
-      <div className="fixed top-0 w-full z-[60] bg-gradient-to-r from-blue-600  to-purple-600 text-white py-2 overflow-hidden">
-        <div className="relative flex">
-          <div className="animate-scroll flex whitespace-nowrap">
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-            <span className="mx-8 text-sm md:text-base font-medium">
-              🎧 Sign up before Dec. 1 for a chance to win 1x AirPods Pro 2
-            </span>
-          </div>
-          
-        </div>
-      </div>
-
       {/* Navigation */}
       <nav className="fixed top-10 w-full z-50 backdrop-blur-sm hidden md:flex md:backdrop-blur-sm">
         <div className="container mx-auto px-4 py-1">
@@ -477,7 +453,7 @@ export default function StangHacksLanding() {
                     <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Free pizza, drinks, and Panda Express
+                    Free pizza and drinks
                   </li>
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -539,8 +515,7 @@ export default function StangHacksLanding() {
             {[
               { name: "Thomas Liu", role: "Director of Outreach", linkedinUrl: "https://www.linkedin.com/in/thomas-liu-380042231/" },
               { name: "Ayush Rane", role: "Director of Sponsorships", linkedinUrl: "https://www.linkedin.com/in/ayush-rane-344b02260/" },
-              { name: "Edison Law", role: "Director of Technology", linkedinUrl: "https://www.linkedin.com/in/edison-law-04a3ab290/" },
-              { name: "Christian Egli", role: "Director of Operations", linkedinUrl: "https://www.linkedin.com/in/christian-egli-4a7187344" },
+              { name: "Shlok Madhekar", role: "Director of Operations", linkedinUrl: "https://www.linkedin.com/in/shlok-madhekar-b281872a1" },
             ].map((member, i) => (
               <div key={i} className="flex flex-col">
                 <TeamMemberCard {...member}/>
@@ -550,7 +525,7 @@ export default function StangHacksLanding() {
           <h1 className="text-lg sm:text-xl md:text-lg lg:text-3xl font-bold text-center mb-8 text-foreground">Team</h1>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto">
             {[
-              { name: "Shlok Madhekar", role: "Operations",linkedinUrl: "https://www.linkedin.com/in/shlok-madhekar-b281872a1" },
+              { name: "Christian Egli", role: "Operations",linkedinUrl: "https://www.linkedin.com/in/christian-egli-4a7187344" },
               { name: "Braden Luu", role:"Sponsorships", linkedinUrl: "#" },
               { name: "Anish Dhamija", role: "Sponsorships",linkedinUrl: "https://www.linkedin.com/in/anish-dhamija-5b93712b3" },
               { name: "Dylan Chauhan", role: "Recruitment", linkedinUrl: "#" },
