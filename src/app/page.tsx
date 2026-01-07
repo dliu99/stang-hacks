@@ -324,11 +324,13 @@ export default function StangHacksLanding() {
       <section id="judges" className="py-24 px-4 bg-background">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Judges</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {[
-              { name: "Mahesh Chaudhari", role: "Assistant Professor - University of San Francisco", linkedinUrl: "https://www.linkedin.com/in/maheshchaudhari/" },
-              { name: "Tejas Pravinbhai Patel", role: "Software Development Engineer - Amazon", linkedinUrl: "https://www.linkedin.com/in/tejas5038" },
-              { name: "Jay Bharat Mehta", role: "Senior Software Engineer - Snowflake", linkedinUrl: "https://www.linkedin.com/in/jaymehta501" },
+              { name: "Mahesh Chaudhari", role: "Assistant Professor @ University of San Francisco", linkedinUrl: "https://www.linkedin.com/in/maheshchaudhari/" },
+              
+              {name: "Siva Iyer", role: "SVP/Head of Software Engineering @ Federal Reserve Financial Services", "linkedinUrl": "https://www.linkedin.com/in/siva-iyer-670a33/"},
+              {name: "Bharat Rane", role: "Platform Engineering Director @ Moody's Corporation", linkedinUrl: "https://www.linkedin.com/in/bharatrane/"},
+              { name: "Shantanoo Kirtane", role: "Principal Engineer @ Walmart Tech", linkedinUrl: "https://www.linkedin.com/in/shantanoo-kirtane-47017215/" },
               
               
             ].map((judge, i) => (
@@ -340,16 +342,14 @@ export default function StangHacksLanding() {
 
 
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
-          {[{ name: "Shantanoo Kirtane", role: "Principal Engineer - Walmart Tech", linkedinUrl: "https://www.linkedin.com/in/shantanoo-kirtane-47017215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                { name: "Surya Rao Rayarao", role: "Lead Software Engineer - SS&C Technologies", linkedinUrl: "https://www.linkedin.com/in/suryarayarao/" },
-
-              ].map((judge, i) => (
+          {/*<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
+          {[{ name: "TBD", role: "TBD", linkedinUrl: "TBD" }].map((judge, i) => (
                 <div key={i} className="flex flex-col">
                   <TeamMemberCard {...judge}/>
                 </div>
               ))}
           </div>
+          */}
         </div>
       </section>
 
@@ -376,17 +376,18 @@ export default function StangHacksLanding() {
                   <span className="font-medium">9:00 AM</span>
                 </div>
                 <div className="flex justify-between">
+                  <span>Workshop - How to Win Hackathons (for beginners)</span>
+                  <span className="font-medium">10:00 AM</span>
+                </div>
+                <div className="flex justify-between">
                   <span>Lunch Break</span>
                   <span className="font-medium">12:00 PM</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Workshop - TBD</span>
+                  <span>Workshop - Basics of Microcontrollers</span>
                   <span className="font-medium">1:00 PM</span>
                 </div>
-                <div className="flex justify-between">
-                  <span>Workshop - TBD</span>
-                  <span className="font-medium">4:00 PM</span>
-                </div>
+          
                 <div className="flex justify-between">
                   <span>Submissions Due</span>
                   <span className="font-medium">6:30 PM</span>
@@ -511,7 +512,7 @@ export default function StangHacksLanding() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto mb-20">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 max-w-4xl mx-auto mb-20">
             {[
               { name: "Thomas Liu", role: "Director of Outreach", linkedinUrl: "https://www.linkedin.com/in/thomas-liu-380042231/" },
               { name: "Ayush Rane", role: "Director of Sponsorships", linkedinUrl: "https://www.linkedin.com/in/ayush-rane-344b02260/" },
