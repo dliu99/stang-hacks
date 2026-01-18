@@ -64,10 +64,10 @@ export default function StangHacksLanding() {
             {/* Signup CTA */}
             <div className="mb-12">
               
-              <p className="text-lg text-muted-foreground">January 24th, 2026 • 8:00 AM - 8:00 PM</p>
+              <p className="text-lg text-muted-foreground">March 2026 • 8:00 AM - 8:00 PM</p>
               <div className="flex flex-row items-center justify-center gap-2">
                 <MapPin className="h-6 w-6 text-muted-foreground" />
-                <p className="text-lg text-muted-foreground">Workday Center, <Link href="https://maps.app.goo.gl/uCXp5xZibcQFfDYz8" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Monte Vista High School</Link></p>
+                <p className="text-lg text-muted-foreground"><Link href="https://maps.app.goo.gl/MQeFJdvqLqPB5M22A" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Zoho Corporation</Link>, Pleasanton, CA</p>
               </div>
               <Button size="lg" className="rounded-lg px-12 py-6 mt-12 h-14 w-50 hover:scale-105 transition-all hover:border-1 border-white text-xl" asChild>
                 <Link href="https://luma.com/bi8uvliv" target="_blank">
@@ -532,6 +532,7 @@ export default function StangHacksLanding() {
               { name: "Dylan Chauhan", role: "Recruitment", linkedinUrl: "#" },
               { name: "Risha Bhat", role: "Outreach", linkedinUrl: "https://www.linkedin.com/in/risha-bhat-250297341/" },
               { name: "Ilina Iyer", role:"Outreach", linkedinUrl: "https://www.linkedin.com/in/ilinai/" },
+              
               { name: "Jacob Chiu", role: "Volunteer", linkedinUrl: "#" },
               { name: "Scott Wang", role: "Volunteer", linkedinUrl: "#" },
               { name: "Tejas Nagarkar", role: "Food Quality Testing Intern", linkedinUrl: "https://www.linkedin.com/in/tejas-tj-nagarkar-740298309/" },
