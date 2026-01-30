@@ -44,7 +44,7 @@ export default function StangHacksLanding() {
           src="/bg.webp"
           alt="Background"
           fill
-          className="object-cover object-center absolute inset-0 w-full h-full z-0 opacity-40"
+          className="object-cover object-center absolute inset-0 w-full h-full z-0 opacity-70"
           priority
         />
         {/* Dark Overlay */}
@@ -54,7 +54,7 @@ export default function StangHacksLanding() {
             {/* Logo Space */}
             <div className="mb-2">
               <div className="w-full h-auto mx-auto  rounded-lg flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
-                <Image src="/translaptop.webp" alt="Stang Hacks Logo" width={160} height={160} className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 sm:mr-5"/>
+                <Image src="/mainlogo.webp" alt="Stang Hacks Logo" width={160} height={160} className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 sm:mr-5"/>
                 <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold text-foreground tracking-tighter text-center sm:text-left">Stang Hacks</h1>
               </div>
               
