@@ -64,7 +64,7 @@ export default function StangHacksLanding() {
             {/* Signup CTA */}
             <div className="mb-12">
               
-              <p className="text-lg text-muted-foreground">March 2026 • 8:00 AM - 8:00 PM</p>
+              <p className="text-lg text-muted-foreground">March 7th, 2026 • 8:00 AM - 8:00 PM</p>
               <div className="flex flex-row items-center justify-center gap-2">
                 <MapPin className="h-6 w-6 text-muted-foreground" />
                 <p className="text-lg text-muted-foreground"><Link href="https://maps.app.goo.gl/MQeFJdvqLqPB5M22A" target="_blank" className="underline-offset-3 underline hover:text-foreground transition-colors">Zoho Corporation</Link>, Pleasanton, CA</p>
