@@ -265,8 +265,8 @@ export default function StangHacksLanding() {
                 <Link href="https://www.pcbway.com" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/pcbway.webp" alt="PCBWay" width={160} height={70} />
                   </Link>
-                  <Link href="https://vly.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
-                    <Image src="/sponsors/vly.png" alt="Vly" width={70} height={70} />
+                  <Link href="https://featherless.ai" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/featherless.svg" alt="Featherless" width={200} height={200} />
                   </Link>
                 </div>
               </div>
