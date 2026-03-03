@@ -12,14 +12,18 @@ interface TeamMemberCardProps {
 export const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, role, linkedinUrl }) => (
   <div className="flex flex-col items-center text-center">
     <h3 className="font-semibold text-accent-foreground text-lg mb-1">
-      <Link
-        href={linkedinUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="transition-all duration-150 hover:text-blue-600 hover:scale-105 hover:translate-y-1"
-      >
-        {name}
-      </Link>
+      {linkedinUrl ? (
+        <Link
+          href={linkedinUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-all duration-150 hover:text-blue-600 hover:scale-105 hover:translate-y-1"
+        >
+          {name}
+        </Link>
+      ) : (
+        <span>{name}</span>
+      )}
     </h3>
     {role && (
       <p className="text-muted-foreground text-sm mb-1">{role}</p>

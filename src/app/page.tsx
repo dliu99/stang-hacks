@@ -324,32 +324,29 @@ export default function StangHacksLanding() {
       <section id="judges" className="py-24 px-4 bg-background">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Judges</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-5xl mx-auto">
             {[
-              { name: "Mahesh Chaudhari", role: "Assistant Professor @ University of San Francisco", linkedinUrl: "https://www.linkedin.com/in/maheshchaudhari/" },
-              
-              {name: "Siva Iyer", role: "SVP/Head of Software Engineering @ Federal Reserve Financial Services", "linkedinUrl": "https://www.linkedin.com/in/siva-iyer-670a33/"},
-              {name: "Bharat Rane", role: "Platform Engineering Director @ Moody's Corporation", linkedinUrl: "https://www.linkedin.com/in/bharatrane/"},
               { name: "Shantanoo Kirtane", role: "Principal Engineer @ Walmart Tech", linkedinUrl: "https://www.linkedin.com/in/shantanoo-kirtane-47017215/" },
-              
-              
-            ].map((judge, i) => (
+              { name: "Xin Huang", role: "CEO @ SynaXG", linkedinUrl: "https://www.linkedin.com/in/xinhuang/" },
+              { name: "Naidong Shao", role: "Engineering Leader @ Wells Fargo", linkedinUrl: "https://www.linkedin.com/in/naidong-shao/" },
+              { name: "Xiaofei Ma", role: "Engineering Manager @ Meta", linkedinUrl: "https://www.linkedin.com/in/xiaofei-ma-b6568855/" },
+              { name: "Daniel Huang", role: "Founder, The Learning Lab / Ex-PM @ Accenture", linkedinUrl: "https://www.linkedin.com/in/dhuangg/" },
+              { name: "Jerry Li", role: "Founder, The Learning Lab / Ex-Senior SWE @ Robinhood", linkedinUrl: "https://www.linkedin.com/in/jerrylinew/" },
+              { name: "Prabir Vora", role: "Founding Engineer @ Retell AI", linkedinUrl: "https://www.linkedin.com/in/prabir-vora/" },
+              { name: "Hanson Lau", role: "Software Engineer @ Livermore Labs", linkedinUrl: "https://www.linkedin.com/in/hanson-lau" },
+              { name: "Harsha Sanjeeva", role: "Senior Software Engineer @ Cisco", linkedinUrl: "https://www.linkedin.com/in/harshasanjeeva/" },
+              { name: "Logan Roche", role: "Software Engineering Intern @ Hewlett Packard Enterprise", linkedinUrl: "https://www.linkedin.com/in/logan-j-roche" },
+              { name: "Vikas Sachdeva", role: "VP of Product Engineering @ iTalent Digital", linkedinUrl: "https://www.linkedin.com/in/visachdeva/" },
+              { name: "Robert Muresan", role: "CTO @ Bequest Finance", linkedinUrl: "https://www.linkedin.com/in/robert-muresan" },
+              { name: "Dongyang Li", role: "Founding Engineer @ Retell AI", linkedinUrl: "https://www.linkedin.com/in/dongyang-damian-li-a89220353/" },
+              { name: "Abhi Ram Salammagari", role: "Senior ML Engineer @ Workday", linkedinUrl: "https://www.linkedin.com/in/abhiram3040/" },
+              { name: "Li Gao", role: "Software Engineering Manager @ Meta", linkedinUrl: "https://www.linkedin.com/in/ligao101" },
+            ].sort((a, b) => a.name.localeCompare(b.name)).map((judge, i) => (
               <div key={i} className="flex flex-col">
                 <TeamMemberCard {...judge}/>
               </div>
-              
             ))}
-
-
           </div>
-          {/*<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-8">
-          {[{ name: "TBD", role: "TBD", linkedinUrl: "TBD" }].map((judge, i) => (
-                <div key={i} className="flex flex-col">
-                  <TeamMemberCard {...judge}/>
-                </div>
-              ))}
-          </div>
-          */}
         </div>
       </section>
 
