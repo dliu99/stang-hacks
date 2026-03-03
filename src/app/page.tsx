@@ -324,7 +324,18 @@ export default function StangHacksLanding() {
       <section id="judges" className="py-24 px-4 bg-background">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 text-foreground">Judges</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-5xl mx-auto">
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-md mx-auto mb-12">
+            {[
+              { name: "Hanson Lau", role: "MVHS '2021 | Software Engineer @ Lawrence Livermore National Laboratory", linkedinUrl: "https://www.linkedin.com/in/hanson-lau" },
+              { name: "Logan Roche", role: "MVHS '2023 | Software Engineering Intern @ Hewlett Packard Enterprise", linkedinUrl: "https://www.linkedin.com/in/logan-j-roche" },
+            ].map((judge, i) => (
+              <div key={i} className="flex flex-col">
+                <TeamMemberCard {...judge}/>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
             {[
               { name: "Shantanoo Kirtane", role: "Principal Engineer @ Walmart Tech", linkedinUrl: "https://www.linkedin.com/in/shantanoo-kirtane-47017215/" },
               { name: "Xin Huang", role: "CEO @ SynaXG", linkedinUrl: "https://www.linkedin.com/in/xinhuang/" },
@@ -333,20 +344,19 @@ export default function StangHacksLanding() {
               { name: "Daniel Huang", role: "Founder, The Learning Lab / Ex-PM @ Accenture", linkedinUrl: "https://www.linkedin.com/in/dhuangg/" },
               { name: "Jerry Li", role: "Founder, The Learning Lab / Ex-Senior SWE @ Robinhood", linkedinUrl: "https://www.linkedin.com/in/jerrylinew/" },
               { name: "Prabir Vora", role: "Founding Engineer @ Retell AI", linkedinUrl: "https://www.linkedin.com/in/prabir-vora/" },
-              { name: "Hanson Lau", role: "Software Engineer @ Lawrence Livermore National Laboratory", linkedinUrl: "https://www.linkedin.com/in/hanson-lau" },
               { name: "Harsha Sanjeeva", role: "Senior Software Engineer @ Cisco", linkedinUrl: "https://www.linkedin.com/in/harshasanjeeva/" },
-              { name: "Logan Roche", role: "Software Engineering Intern @ Hewlett Packard Enterprise", linkedinUrl: "https://www.linkedin.com/in/logan-j-roche" },
               { name: "Vikas Sachdeva", role: "VP of Product Engineering @ iTalent Digital", linkedinUrl: "https://www.linkedin.com/in/visachdeva/" },
               { name: "Robert Muresan", role: "CTO @ Bequest Finance", linkedinUrl: "https://www.linkedin.com/in/robert-muresan" },
               { name: "Dongyang Li", role: "Founding Engineer @ Retell AI", linkedinUrl: "https://www.linkedin.com/in/dongyang-damian-li-a89220353/" },
               { name: "Abhi Ram Salammagari", role: "Senior ML Engineer @ Workday", linkedinUrl: "https://www.linkedin.com/in/abhiram3040/" },
               { name: "Li Gao", role: "Software Engineering Manager @ Meta", linkedinUrl: "https://www.linkedin.com/in/ligao101" },
             ].sort((a, b) => a.name.localeCompare(b.name)).map((judge, i) => (
-              <div key={i} className="flex flex-col">
+              <div key={i} className="flex flex-col w-[calc(20%-1.6rem)] sm:w-[calc(33.333%-1.4rem)] md:w-[calc(20%-1.6rem)]">
                 <TeamMemberCard {...judge}/>
               </div>
             ))}
           </div>
+          
         </div>
       </section>
 
@@ -526,13 +536,21 @@ export default function StangHacksLanding() {
               { name: "Christian Egli", role: "Operations",linkedinUrl: "https://www.linkedin.com/in/christian-egli-4a7187344" },
               { name: "Braden Luu", role:"Sponsorships", linkedinUrl: "#" },
               { name: "Anish Dhamija", role: "Sponsorships",linkedinUrl: "https://www.linkedin.com/in/anish-dhamija-5b93712b3" },
-              { name: "Dylan Chauhan", role: "Recruitment", linkedinUrl: "#" },
-              { name: "Risha Bhat", role: "Outreach", linkedinUrl: "https://www.linkedin.com/in/risha-bhat-250297341/" },
-              { name: "Ilina Iyer", role:"Outreach", linkedinUrl: "https://www.linkedin.com/in/ilinai/" },
+              { name: "Dylan Chauhan", role: "Volunteer", linkedinUrl: "#" },
+              { name: "Risha Bhat", role: "Volunteer", linkedinUrl: "https://www.linkedin.com/in/risha-bhat-250297341/" },
+              { name: "Ilina Iyer", role:"Volunteer", linkedinUrl: "https://www.linkedin.com/in/ilinai/" },
               
               { name: "Jacob Chiu", role: "Volunteer", linkedinUrl: "#" },
               { name: "Scott Wang", role: "Volunteer", linkedinUrl: "#" },
-              { name: "Tejas Nagarkar", role: "Food Quality Testing Intern", linkedinUrl: "https://www.linkedin.com/in/tejas-tj-nagarkar-740298309/" },
+              { name: "Tejas Nagarkar", role: "Volunteer", linkedinUrl: "https://www.linkedin.com/in/tejas-tj-nagarkar-740298309/" },
+              { name: "Jivraj Wadwha", role: "Volunteer", linkedinUrl: "" },
+              { name: "Smayan Panda", role: "Volunteer", linkedinUrl: "" },
+              { name: "Anderson Shao", role: "Volunteer", linkedinUrl: "" },
+              { name: "Kevin Yang", role: "Volunteer", linkedinUrl: "" },
+              { name: "Matthew Guo", role: "Volunteer", linkedinUrl: "" },
+              { name: "Michael Chen", role: "Volunteer", linkedinUrl: "" },
+              { name: "Jeffrey Chae", role: "Volunteer", linkedinUrl: "" },
+              { name: "Warren Lin", role: "Volunteer", linkedinUrl: "" },
             ].map((member, i) => (
               <div key={i} className="flex flex-col">
                 <TeamMemberCard {...member}/>
