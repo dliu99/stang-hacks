@@ -386,16 +386,16 @@ export default function StangHacksLanding() {
                 </div>
           
                 <div className="flex justify-between">
-                  <span>Submissions Due</span>
-                  <span className="font-medium">6:30 PM</span>
+                  <span>Submissions Due / Dinner</span>
+                  <span className="font-medium">6:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Judging</span>
-                  <span className="font-medium">6:45 PM</span>
+                  <span className="font-medium">6:30 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Awards Ceremony</span>
-                  <span className="font-medium">7:30 PM</span>
+                  <span className="font-medium">8:30 PM</span>
                 </div>
               </CardContent>
             </Card>
