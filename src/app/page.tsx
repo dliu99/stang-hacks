@@ -350,7 +350,7 @@ export default function StangHacksLanding() {
               { name: "Damian Li", role: "Founding Engineer @ Retell AI", linkedinUrl: "https://www.linkedin.com/in/dongyang-damian-li-a89220353/" },
               { name: "Abhi Ram Salammagari", role: "Senior ML Engineer @ Workday", linkedinUrl: "https://www.linkedin.com/in/abhiram3040/" },
               { name: "Li Gao", role: "Software Engineering Manager @ Meta", linkedinUrl: "https://www.linkedin.com/in/ligao101" },
-              { name: "Ajenkya Kadam", role: "Principal Software Engineer @ Microsoft AI", linkedinUrl: "https://www.linkedin.com/in/ajenkyakadam/"},
+              { name: "Ajinkya Kadam", role: "Principal Software Engineer @ Microsoft AI", linkedinUrl: "https://www.linkedin.com/in/ajenkyakadam/"},
               { name: "Bharat Rane", role: "Platform Engineering Director @ Moody's Corporation", linkedinUrl: "https://www.linkedin.com/in/bharatrane/"},
             ].sort((a, b) => a.name.localeCompare(b.name)).map((judge, i) => (
               <div key={i} className="flex flex-col w-[calc(20%-1.6rem)] sm:w-[calc(33.333%-1.4rem)] md:w-[calc(20%-1.6rem)]">
@@ -533,8 +533,8 @@ export default function StangHacksLanding() {
             ))}
           </div>
           <h1 className="text-lg sm:text-xl md:text-lg lg:text-3xl font-bold text-center mb-8 text-foreground">Team</h1>
-          {(() => {
-            const members = [
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-4xl mx-auto justify-items-center">
+            {[
               { name: "Braden Luu", role: "Sponsorships", linkedinUrl: "#" },
               { name: "Anish Dhamija", role: "Sponsorships", linkedinUrl: "https://www.linkedin.com/in/anish-dhamija-5b93712b3" },
               { name: "Warren Lin", role: "Workshop Lead", linkedinUrl: "" },
@@ -544,7 +544,7 @@ export default function StangHacksLanding() {
               { name: "Ilina Iyer", role: "Volunteer", linkedinUrl: "https://www.linkedin.com/in/ilinai/" },
               { name: "Jacob Chiu", role: "Volunteer", linkedinUrl: "#" },
               { name: "Scott Wang", role: "Volunteer", linkedinUrl: "#" },
-              { name: "Tejas Nagarkar", role: "Volunteer", linkedinUrl: "https://www.linkedin.com/in/tejas-tj-nagarkar-740298309/" },
+              
               { name: "Jivraj Wadwha", role: "Volunteer", linkedinUrl: "" },
               { name: "Smayan Panda", role: "Volunteer", linkedinUrl: "" },
               { name: "Anderson Shao", role: "Volunteer", linkedinUrl: "" },
@@ -552,28 +552,16 @@ export default function StangHacksLanding() {
               { name: "Matthew Guo", role: "Volunteer", linkedinUrl: "" },
               { name: "Michael Chen", role: "Volunteer", linkedinUrl: "" },
               { name: "Jeffrey Chae", role: "Volunteer", linkedinUrl: "" },
-            ];
-            const pattern = [4, 3, 4, 3, 2];
-            const rows: (typeof members)[] = [];
-            let idx = 0;
-            for (const count of pattern) {
-              rows.push(members.slice(idx, idx + count));
-              idx += count;
-            }
-            return (
-              <div className="flex flex-col items-center gap-4 md:gap-6 max-w-5xl mx-auto">
-                {rows.map((row, rowIdx) => (
-                  <div key={rowIdx} className="flex flex-wrap justify-center gap-4 md:gap-6">
-                    {row.map((member, i) => (
-                      <div key={i} className="w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)]">
-                        <TeamMemberCard {...member} />
-                      </div>
-                    ))}
-                  </div>
-                ))}
+            ].sort((a, b) => {
+              if (a.role !== "Volunteer" && b.role === "Volunteer") return -1;
+              if (a.role === "Volunteer" && b.role !== "Volunteer") return 1;
+              return a.name.localeCompare(b.name);
+            }).map((member, i) => (
+              <div key={i} className="flex flex-col">
+                <TeamMemberCard {...member}/>
               </div>
-            );
-          })()}
+            ))}
+          </div>
         </div>
       </section>
 
