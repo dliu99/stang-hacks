@@ -333,7 +333,7 @@ export default function StangHacksLanding() {
               { name: "Daniel Huang", role: "Founder, The Learning Lab / Ex-PM @ Accenture", linkedinUrl: "https://www.linkedin.com/in/dhuangg/" },
               { name: "Jerry Li", role: "Founder, The Learning Lab / Ex-Senior SWE @ Robinhood", linkedinUrl: "https://www.linkedin.com/in/jerrylinew/" },
               { name: "Prabir Vora", role: "Founding Engineer @ Retell AI", linkedinUrl: "https://www.linkedin.com/in/prabir-vora/" },
-              { name: "Hanson Lau", role: "Software Engineer @ Livermore Labs", linkedinUrl: "https://www.linkedin.com/in/hanson-lau" },
+              { name: "Hanson Lau", role: "Software Engineer @ Lawrence Livermore National Laboratory", linkedinUrl: "https://www.linkedin.com/in/hanson-lau" },
               { name: "Harsha Sanjeeva", role: "Senior Software Engineer @ Cisco", linkedinUrl: "https://www.linkedin.com/in/harshasanjeeva/" },
               { name: "Logan Roche", role: "Software Engineering Intern @ Hewlett Packard Enterprise", linkedinUrl: "https://www.linkedin.com/in/logan-j-roche" },
               { name: "Vikas Sachdeva", role: "VP of Product Engineering @ iTalent Digital", linkedinUrl: "https://www.linkedin.com/in/visachdeva/" },
