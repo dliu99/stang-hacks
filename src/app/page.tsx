@@ -239,9 +239,15 @@ export default function StangHacksLanding() {
               {/* Partner Section */}
               <div>
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Partner</h4>
-                <div className="flex flex-row gap-8 justify-center items-center mb-4">
+                <div className="flex flex-row gap-4 justify-center items-center mb-4">
                   <Link href="https://vercel.com" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/vercel.svg" alt="Vercel" width={160} height={160} />
+                  </Link>
+                  <Link href="https://crackd.it" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/crackdlogo.webp" alt="Crackd" width={100} height={100} />
+                  </Link>
+                  <Link href="https://frame.work" target="_blank" className="flex items-center justify-center  hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/framework.webp" alt="Framework" width={200} height={200} />
                   </Link>
                   <Link href="https://hackclub.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/hcb.png" alt="Hack Club Bank" width={60} height={60} />
@@ -282,8 +288,12 @@ export default function StangHacksLanding() {
               <div>
                 <h4 className="text-xl font-semibold text-center mb-8 text-foreground">Special</h4>
                 <div className="flex flex-row gap-8 justify-center items-center mb-8">
+                
                 <Link href="https://nordvpn.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/nord.svg" alt="NordVPN" width={90} height={90} />
+                  </Link>
+                  <Link href="https://hackhq.io" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
+                    <Image src="/sponsors/hhq.webp" alt="HackHQ" width={60} height={60} />
                   </Link>
                   <Link href="https://artofproblemsolving.com" target="_blank" className="flex items-center justify-center hover:transition-all hover:scale-105 hover:translate-y-1">
                     <Image src="/sponsors/aops.svg" alt="AoPS" width={160} height={160} />
@@ -296,7 +306,6 @@ export default function StangHacksLanding() {
                   </Link>
                   
                 </div>
-                <h1 className="text-center text-muted-foreground text-sm mb-6">and more on the way -- stay posted!</h1>
                 
               </div>
             </div>
